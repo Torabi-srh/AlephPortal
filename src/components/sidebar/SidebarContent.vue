@@ -74,6 +74,15 @@
             </template>
         </SidebarLink>
         <SidebarLink
+            title="Localization"
+            :to="{ name: 'Localization' }"
+            :active="isCurrentRoute('Localization')"
+        >
+            <template #icon>
+                <LocalizationIcon class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            </template>
+        </SidebarLink> 
+        <SidebarLink
             title="Extentions"
             :to="{ name: 'Extentions' }"
             :active="isCurrentRoute('Extentions')"
@@ -117,6 +126,7 @@ import { DashboardIcon,
          ExtentionsIcon,
          UsersIcon,
          SettingsIcon, 
+         LocalizationIcon,
         } from '@/components/icons/outline'
 import { ShieldCheckIcon, DocumentIcon } from '@heroicons/vue/outline'
 import SidebarCollapsible from '@/components/sidebar/SidebarCollapsible.vue'

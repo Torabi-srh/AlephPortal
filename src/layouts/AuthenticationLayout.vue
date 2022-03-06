@@ -26,5 +26,7 @@
 import LogoLight from '@/components/LogoLight.vue'
 import LogoDark from '@/components/LogoDark.vue'
 import PageFooter from '@/components/PageFooter.vue'
-import isDark from '@/composables'
+import {
+    isDark,
+} from '@/composables'
 </script>

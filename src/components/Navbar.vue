@@ -35,22 +35,27 @@
                 <MoonIcon v-show="!isDark" aria-hidden="true" :class="iconSizeClasses" />
                 <SunIcon v-show="isDark" aria-hidden="true" :class="iconSizeClasses" />
             </Button>
-
-            <Button
+            
+            <Dropdown align="right" width="48">
+                <template #trigger>
+                    <Button
                 iconOnly
-                variant="secondary"
-                @click="toggleFullScreen"
+                variant="secondary" 
                 v-slot="{ iconSizeClasses }"
                 class="hidden md:inline-flex"
-                srText="Toggle dark mode"
+                srText="Notifications"
             >
-                <ArrowsExpandIcon
+                <BellIcon
                     v-show="!isFullscreen"
                     aria-hidden="true"
                     :class="iconSizeClasses"
-                />
-                <ArrowsInnerIcon v-show="isFullscreen" aria-hidden="true" :class="iconSizeClasses" />
+                /> 
             </Button>
+                </template>
+                <template #content>
+                    <DropdownLink to="#">Log Out</DropdownLink>
+                </template>
+            </Dropdown>
 
             <!-- Dropdwon -->
             <Dropdown align="right" width="48">
@@ -126,7 +131,7 @@ import LogoLight from '@/components/LogoLight.vue'
 import LogoDark from '@/components/LogoDark.vue'
 import Dropdown from '@/components/Dropdown.vue'
 import DropdownLink from '@/components/DropdownLink.vue'
-import { ArrowsInnerIcon } from '@/components/icons/outline'
+import { ArrowsInnerIcon, BellIcon } from '@/components/icons/outline'
 import userAvatar from '@/assets/images/avatar.png'
 
 const { isFullscreen, toggle: toggleFullScreen } = useFullscreen()

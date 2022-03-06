@@ -1,5 +1,5 @@
 {
-  "name": "Portal",
+  "name": "alephPortal",
   "version": "0.1.0",
   "description": "CMS",
   "license": "MIT",
@@ -25,7 +25,8 @@
     "perfect-scrollbar": "^1.5.5",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",
-    "vue-toastification": "^2.0.0-rc.5"
+    "vue-toastification": "^2.0.0-rc.5",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.4.0",

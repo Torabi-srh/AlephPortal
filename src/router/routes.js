@@ -53,6 +53,11 @@ export default [
         name: 'Settings',
         component: () => import('@/views/pages/Blank.vue'),
       },
+      {
+        path: '/localization',
+        name: 'Localization',
+        component: () => import('@/views/pages/Blank.vue'),
+      },
     ],
   },
   {

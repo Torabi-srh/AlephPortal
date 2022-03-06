@@ -1,5 +1,5 @@
 <template>
-    <PageWrapper title="Blank">
+    <PageWrapper title="Comming Soon !">
         <!--  -->
     </PageWrapper>
 </template>
