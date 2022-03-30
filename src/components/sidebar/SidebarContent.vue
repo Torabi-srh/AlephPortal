@@ -112,7 +112,7 @@
     </PerfrectScrollbar>
 </template>
 
-<script setup>
+<script >
 import { useRouter } from 'vue-router'
 import PerfrectScrollbar from '@/components/PerfectScrollbar.vue'
 import SidebarLink from '@/components/sidebar/SidebarLink.vue'
